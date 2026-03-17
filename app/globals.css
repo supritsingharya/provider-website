@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(20px, -40px) scale(1.1);
+    }
+    66% {
+      transform: translate(-15px, 15px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 10s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: -3.3s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: -6.6s;
+  }
+  
+  /* For preserving the 3D effect in Safari */
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }

@@ -1,0 +1,46 @@
+{
+  "name": "providerapp",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.7",
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.3.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tanstack/react-query": "^5.84.1",
+    "axios": "^1.11.0",
+    "framer-motion": "^12.18.1",
+    "graphql-request": "^7.2.0",
+    "gsap": "^3.12.7",
+    "lucide": "^0.511.0",
+    "lucide-react": "^0.511.0",
+    "next": "15.3.6",
+    "react": "^19.1.0",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-redux": "^9.2.0",
+    "react-tabs": "^6.1.0",
+    "swiper": "^11.2.8",
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "22.15.21",
+    "@types/react": "19.1.5",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "5.8.3"
+  }
+}

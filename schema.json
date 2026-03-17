@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collages",
+  "info": {
+    "singularName": "collage",
+    "pluralName": "collages",
+    "displayName": "Collage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "address": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "website": {
+      "type": "string"
+    },
+    "latlng": {
+      "type": "json"
+    },
+    "description": {
+      "type": "text"
+    },
+    "published": {
+      "type": "string"
+    },
+    "locationName": {
+      "type": "string"
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "ratings": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "hostelArea": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "string"
+    },
+    "ranking": {
+      "type": "string"
+    },
+    "imgLink": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "companies": {
+      "type": "json"
+    },
+    "mapLink": {
+      "type": "text"
+    },
+    "placements": {
+      "type": "json"
+    },
+    "FeeMatrix": {
+      "type": "json"
+    },
+    "gallery": {
+      "type": "json"
+    },
+    "faqs": {
+      "type": "json"
+    },
+    "reviews": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "docReq": {
+      "type": "json"
+    },
+    "eligibility": {
+      "type": "json"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location",
+      "inversedBy": "collage"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "college",
+        "university"
+      ]
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::city.city"
+    }
+  }
+}
